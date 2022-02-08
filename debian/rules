@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+# See debhelper(7) (uncomment to enable)
+# output every command that modifies files on the build system.
+#export DH_VERBOSE = 1
+
+override_dh_auto_configure:
+
+override_dh_auto_build:
+
+override_dh_auto_install:
+	osinfo-db-import \
+	    --root debian/osinfo-db/ \
+	    --dir /usr/share/osinfo \
+	    osinfo-db.tar.xz
+
+override_dh_auto_clean:
+
+override_dh_auto_test:
+
+%:
+	dh $@

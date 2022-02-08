@@ -1,0 +1,26 @@
+Source: osinfo-db
+Section: libs
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Wong Hoi Sing Edison <hswong3i@gmail.com>
+Homepage: https://gitlab.com/libosinfo/osinfo-db/-/tags
+Vcs-Browser: https://github.com/alvistack/libosinfo-osinfo-db
+Vcs-Git: https://github.com/alvistack/libosinfo-osinfo-db.git
+Build-Depends:
+ debhelper,
+ debhelper-compat (= 10),
+ gettext,
+ osinfo-db-tools,
+
+Package: osinfo-db
+Architecture: all
+Multi-Arch: foreign
+Description: Operating system database files
+ libosinfo is a GObject based library API for managing information about
+ operating systems, hypervisors and the (virtual) hardware devices they
+ can support. It provides APIs to match/identify optimal devices for deploying
+ an operating system on a hypervisor.
+ .
+ This package contains the actual database files.
+Depends:
+ ${misc:Depends},
