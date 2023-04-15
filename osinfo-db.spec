@@ -1,4 +1,4 @@
-# Copyright 2022 Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+# Copyright 2023 Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@
 Name: osinfo-db
 BuildArch: noarch
 Epoch: 100
-Version: 20221130
+Version: 20231130
 Release: 1%{?dist}
 Summary: osinfo database files
 License:  GPL-2.0-or-later
