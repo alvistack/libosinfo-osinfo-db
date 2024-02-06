@@ -4,6 +4,5 @@ data/**/*.rng
 install/
 public/
 rpmbuild/
-*.spec
 *.tar.xz
 *~
